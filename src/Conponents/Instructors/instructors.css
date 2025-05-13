@@ -1,0 +1,148 @@
+.instructors {
+  padding: 5rem 2rem;
+  background: #F8F9FA;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.instructors h2 {
+  color: #2A5CAA;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: slideUp 0.5s ease-out;
+  font-family: var( --font-inter);
+
+}
+
+.instructors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.instructor-card {
+  background: white; /* Changed for better contrast */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.instructor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Added shadow effect on hover */
+}
+
+.instructor-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+  aspect-ratio: 3/4;
+  transition: transform 0.4s ease;
+}
+
+.instructor-image:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.instructor-info {
+  padding: 0 0.5rem;
+  font-family: var( --font-roboto);
+
+}
+
+.instructor-name {
+  color: #2A5CAA;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.instructor-role {
+  color: #FF6B35;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.35rem;
+}
+
+.instructor-bio {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem auto;
+}
+
+.social-links .socialitem {
+  color: #353535;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #FF6B35;
+}
+
+.view-all-btn {
+  background: #2A5CAA;
+  color: white;
+  border: none;
+  padding: 1rem 2.15rem;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-top: 3rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  font-size: 16px;
+}
+
+.view-all-btn:hover {
+  background: #1E4B8C;
+  transform: scale(1.05); /* Subtle scaling effect */
+}
+
+@media only screen and (max-width: 450px) {
+  .instructors h2 {
+    font-size: 1.9rem;
+  }
+  .instructor-card {
+    padding: 1rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

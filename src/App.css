@@ -1,0 +1,31 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  /* Primary Colors */
+  --archimed-blue: #256E93;
+  --archimed-orange: #FF6B35;
+
+  /* Secondary Colors */
+  --archimed-teal: #2EC4B6;
+  --archimed-light-gray: #F7F7F7;
+  --archimed-dark-charcoal: #333333;
+  --bg-light: #FAFAFA; /* Slightly warmer than pure white */
+
+  /* Optional Utility Colors */
+  --archimed-white: #FFFFFF;
+  --archimed-black: #000000;
+  --font-inter : 'Inter', sans-serif;
+  --font-roboto : 'Roboto', 'Helvetica Neue', sans-serif;
+
+}
+body
+{
+  background: var(--bg-light);
+}
